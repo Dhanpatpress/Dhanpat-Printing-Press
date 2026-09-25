@@ -81,11 +81,9 @@
               <a class="button button-primary" href="#services" data-i18n="hero.explore">Explore printing</a>
               <a
                 class="button button-quiet"
-                href="https://maps.app.goo.gl/T9V8WaFqEGcEhaN49"
-                target="_blank"
-                rel="noreferrer"
-                data-i18n="hero.visit"
-              >Plan a visit <span aria-hidden="true">↗</span></a>
+                href="#quote"
+                data-i18n="hero.quote"
+              >Get a print quote <span aria-hidden="true">→</span></a>
             </div>
             <div class="hero-note">
               <span class="note-line" aria-hidden="true"></span>
@@ -108,14 +106,9 @@
       </section>
 
       <section class="heritage section" id="heritage" aria-labelledby="heritage-title">
-        <div class="heritage-print" aria-hidden="true">
-          <div class="press-top"></div>
-          <div class="press-roller roller-one"></div>
-          <div class="press-roller roller-two"></div>
-          <div class="press-paper paper-one"></div>
-          <div class="press-paper paper-two"></div>
-          <span class="ink-dot cyan"></span><span class="ink-dot magenta"></span><span class="ink-dot yellow"></span>
-        </div>
+        <figure class="heritage-image">
+          <img src="assets/heritage.png" alt="Traditional printing workspace with a vintage press, paper, and invitation cards" />
+        </figure>
         <div class="heritage-copy">
           <p class="eyebrow" data-i18n="heritage.eyebrow">01 — Heritage</p>
           <h2 id="heritage-title" data-i18n="heritage.title">A printing legacy in <i>Chakia.</i></h2>
@@ -354,16 +347,159 @@
         </ol>
       </section>
 
+      <section class="quote-section section" id="quote" aria-labelledby="quote-title">
+        <div class="quote-intro">
+          <p class="eyebrow" data-i18n="quote.eyebrow">10 — Dhanpat Print Desk</p>
+          <h2 id="quote-title" data-i18n="quote.title">Tell us what needs <i>printing.</i></h2>
+          <p data-i18n="quote.description">Give us the essentials and we will prepare a neat WhatsApp enquiry for you. A real person can then help with paper, format, artwork, and the next step.</p>
+          <div class="quote-assurance">
+            <span aria-hidden="true">✦</span>
+            <p data-i18n="quote.assurance">No payment, login, or upload is needed here. You choose what to send when WhatsApp opens.</p>
+          </div>
+        </div>
+
+        <form class="quote-form" id="quote-form">
+          <div class="quote-form-heading">
+            <span class="form-step" aria-hidden="true">01</span>
+            <div>
+              <h3 data-i18n="quote.formTitle">Build your enquiry</h3>
+              <p data-i18n="quote.formDescription">A few details make it easier to give useful guidance from the start.</p>
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <label class="form-field field-wide" for="quote-service">
+              <span data-i18n="quote.service.label">What do you need printed? <b>*</b></span>
+              <select id="quote-service" name="service" required>
+                <option value="" selected disabled data-i18n="quote.service.placeholder">Choose a print need</option>
+                <option value="Wedding &amp; invitation printing" data-i18n="quote.service.wedding">Wedding &amp; invitation printing</option>
+                <option value="Business stationery" data-i18n="quote.service.business">Business stationery</option>
+                <option value="Commercial &amp; promotional printing" data-i18n="quote.service.commercial">Commercial &amp; promotional printing</option>
+                <option value="Books, documents &amp; binding" data-i18n="quote.service.books">Books, documents &amp; binding</option>
+                <option value="Other / need guidance" data-i18n="quote.service.other">Other / I need guidance</option>
+              </select>
+            </label>
+
+            <label class="form-field" for="quote-quantity">
+              <span data-i18n="quote.quantity.label">Approximate quantity</span>
+              <input id="quote-quantity" name="quantity" type="text" inputmode="numeric" autocomplete="off" />
+            </label>
+
+            <label class="form-field" for="quote-size">
+              <span data-i18n="quote.size.label">Size or format</span>
+              <input id="quote-size" name="format" type="text" autocomplete="off" />
+            </label>
+
+            <label class="form-field" for="quote-date">
+              <span data-i18n="quote.date.label">When do you need it?</span>
+              <input id="quote-date" name="needBy" type="date" />
+            </label>
+
+            <label class="form-field field-wide" for="quote-details">
+              <span data-i18n="quote.details.label">Anything else we should know?</span>
+              <textarea id="quote-details" name="details" rows="4" data-i18n-placeholder="quote.details.placeholder" placeholder="Colours, paper preference, occasion, design idea, or any question."></textarea>
+            </label>
+          </div>
+
+          <div class="quote-form-footer">
+            <p data-i18n="quote.privacy">Your details stay in this browser until you choose to open WhatsApp. You can attach artwork or a reference image there.</p>
+            <button class="button button-primary quote-submit" type="submit" data-i18n="quote.submit">Create WhatsApp enquiry <span aria-hidden="true">↗</span></button>
+          </div>
+        </form>
+      </section>
+
       <section class="stories section" aria-labelledby="stories-title">
         <div class="stories-copy">
-          <p class="eyebrow" data-i18n="stories.eyebrow">10 — Customer stories</p>
-          <h2 id="stories-title" data-i18n="stories.title">Real feedback belongs <i>here.</i></h2>
-          <p data-i18n="stories.copy">This space is intentionally reserved for verified customer stories, added with their permission. Print deserves a reputation built on real work, not invented praise.</p>
+          <p class="eyebrow" data-i18n="stories.eyebrow">11 — Customer stories</p>
+          <h2 id="stories-title" data-i18n="stories.title">Real words from real <i>print customers.</i></h2>
+          <p data-i18n="stories.copy">A selection of feedback from customers who have trusted Dhanpat with invitations, business stationery, books, and everyday print work.</p>
         </div>
         <div class="stories-quote">
           <span class="quote-mark" aria-hidden="true">“</span>
           <p data-i18n="stories.quote">Have a project in mind? Start the next real story with a conversation at the press.</p>
           <a class="text-link" href="#contact" data-i18n="stories.link">Start a conversation <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="review-carousel" data-review-carousel aria-label="Customer feedback">
+          <div class="review-carousel-toolbar">
+            <div>
+              <span class="review-kicker" data-i18n="reviews.kicker">Customer feedback</span>
+              <p class="review-count"><span data-review-current>01</span><span aria-hidden="true"> / </span><span>10</span></p>
+            </div>
+            <div class="review-controls">
+              <button class="review-control" type="button" data-review-prev>
+                <span aria-hidden="true">←</span><span class="visually-hidden" data-i18n="reviews.previous">Previous review</span>
+              </button>
+              <button class="review-control" type="button" data-review-next>
+                <span aria-hidden="true">→</span><span class="visually-hidden" data-i18n="reviews.next">Next review</span>
+              </button>
+            </div>
+          </div>
+          <div class="review-viewport">
+            <div class="review-track" data-review-track>
+          <article class="review-card">
+            <span class="review-index" aria-hidden="true">01</span>
+            <p data-i18n="review.rahul.quote">“I got wedding invitation cards printed here and was quite happy with the quality. The Hindi printing was clear, the colours came out nicely, and they also helped me with the design corrections before printing. Delivery was on time as promised.”</p>
+            <footer><strong data-i18n="review.rahul.name">Rahul Sharma</strong><span data-i18n="review.rahul.project">Wedding invitations</span></footer>
+          </article>
+          <article class="review-card">
+            <span class="review-index" aria-hidden="true">02</span>
+            <p data-i18n="review.arif.quote">“I needed invitation cards in Urdu for a family function. The printing was neat and the Urdu text was properly aligned. They were also patient with the changes I wanted. Good service and reasonable pricing.”</p>
+            <footer><strong data-i18n="review.arif.name">Mohammad Arif</strong><span data-i18n="review.arif.project">Urdu invitations</span></footer>
+          </article>
+          <article class="review-card">
+            <span class="review-index" aria-hidden="true">03</span>
+            <p data-i18n="review.neha.quote">“I have been getting visiting cards and other business printing work done here. The quality is good and they usually complete the work within the committed time. Staff is also cooperative when you need small changes.”</p>
+            <footer><strong data-i18n="review.neha.name">Neha Singh</strong><span data-i18n="review.neha.project">Business stationery</span></footer>
+          </article>
+          <article class="review-card">
+            <span class="review-index" aria-hidden="true">04</span>
+            <p data-i18n="review.amit.quote">“I got bill books and cash memos printed for my shop. The printing quality is clear and the paper quality is also good. They understood the format I needed and prepared everything without making the process complicated.”</p>
+            <footer><strong data-i18n="review.amit.name">Amit Gupta</strong><span data-i18n="review.amit.project">Bill books &amp; cash memos</span></footer>
+          </article>
+          <article class="review-card">
+            <span class="review-index" aria-hidden="true">05</span>
+            <p data-i18n="review.pooja.quote">“We got invitation cards printed for a family ceremony. There were quite a few changes in the text, but they patiently made the corrections before final printing. The final cards looked good and were delivered on time.”</p>
+            <footer><strong data-i18n="review.pooja.name">Pooja Verma</strong><span data-i18n="review.pooja.project">Family ceremony invitations</span></footer>
+          </article>
+          <article class="review-card">
+            <span class="review-index" aria-hidden="true">06</span>
+            <p data-i18n="review.sameer.quote">“I needed a large number of cards printed in a short time. The team was able to handle the quantity without compromising much on the printing quality. They also gave me a few options for paper and finishing.”</p>
+            <footer><strong data-i18n="review.sameer.name">Sameer Khan</strong><span data-i18n="review.sameer.project">Bulk card printing</span></footer>
+          </article>
+          <article class="review-card">
+            <span class="review-index" aria-hidden="true">07</span>
+            <p data-i18n="review.rajesh.quote">“I got a book binding job done here. The pages were properly arranged and the cover was fitted nicely on both sides. The binding feels strong and the overall finishing was clean. Good place for regular printing and binding work.”</p>
+            <footer><strong data-i18n="review.rajesh.name">Rajesh Yadav</strong><span data-i18n="review.rajesh.project">Book binding</span></footer>
+          </article>
+          <article class="review-card">
+            <span class="review-index" aria-hidden="true">08</span>
+            <p data-i18n="review.anjali.quote">“I ordered business cards for my small business. The design and text were printed clearly and the cards had a professional finish. What I liked most was that they explained the available paper and printing options instead of simply printing whatever was given.”</p>
+            <footer><strong data-i18n="review.anjali.name">Anjali Mishra</strong><span data-i18n="review.anjali.project">Business cards</span></footer>
+          </article>
+          <article class="review-card">
+            <span class="review-index" aria-hidden="true">09</span>
+            <p data-i18n="review.faizan.quote">“I have used their printing service for both personal and business requirements. From Urdu invitation cards to regular documents and bill books, the work has been consistent. Pricing is also reasonable compared with the quality they provide.”</p>
+            <footer><strong data-i18n="review.faizan.name">Faizan Ahmed</strong><span data-i18n="review.faizan.project">Personal &amp; business printing</span></footer>
+          </article>
+          <article class="review-card">
+            <span class="review-index" aria-hidden="true">10</span>
+            <p data-i18n="review.suresh.quote">“I have been getting different printing work done here, including visiting cards, bills and invitation cards. They offer different options depending on the requirement and are willing to make corrections before printing. Overall, a reliable local printing service.”</p>
+            <footer><strong data-i18n="review.suresh.name">Suresh Kumar</strong><span data-i18n="review.suresh.project">Everyday printing</span></footer>
+          </article>
+            </div>
+          </div>
+          <div class="review-dots" aria-label="Review navigation">
+            <button class="review-dot active" type="button" data-review-dot="0" aria-label="Show review 1" aria-current="true"></button>
+            <button class="review-dot" type="button" data-review-dot="1" aria-label="Show review 2"></button>
+            <button class="review-dot" type="button" data-review-dot="2" aria-label="Show review 3"></button>
+            <button class="review-dot" type="button" data-review-dot="3" aria-label="Show review 4"></button>
+            <button class="review-dot" type="button" data-review-dot="4" aria-label="Show review 5"></button>
+            <button class="review-dot" type="button" data-review-dot="5" aria-label="Show review 6"></button>
+            <button class="review-dot" type="button" data-review-dot="6" aria-label="Show review 7"></button>
+            <button class="review-dot" type="button" data-review-dot="7" aria-label="Show review 8"></button>
+            <button class="review-dot" type="button" data-review-dot="8" aria-label="Show review 9"></button>
+            <button class="review-dot" type="button" data-review-dot="9" aria-label="Show review 10"></button>
+          </div>
         </div>
       </section>
 
@@ -385,7 +521,7 @@
           >Open in Google Maps <span aria-hidden="true">↗</span></a>
         </div>
         <div class="contact-panel">
-          <p class="eyebrow" data-i18n="contact.eyebrow">11 — Visit &amp; contact</p>
+          <p class="eyebrow" data-i18n="contact.eyebrow">12 — Visit &amp; contact</p>
           <h2 id="contact-title" data-i18n="contact.title">Bring your idea <i>to print.</i></h2>
           <p data-i18n="contact.copy">For a wedding set, a business need, or a printed project, visit Dhanpat Printing Press in Chakia and discuss the right format in person.</p>
           <div class="contact-actions">
@@ -396,6 +532,20 @@
         </div>
       </section>
     </main>
+
+    <a
+      class="whatsapp-float"
+      href="https://wa.me/919793623203"
+      target="_blank"
+      rel="noreferrer"
+      aria-label="Chat with Dhanpat Printing Press on WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M20.4 11.5a8.34 8.34 0 0 1-12.3 7.36L3.6 20.4l1.54-4.34A8.36 8.36 0 1 1 20.4 11.5Z"></path>
+        <path d="M8.54 7.8c.18-.4.37-.4.54-.4h.46c.15 0 .35.05.45.35l.64 1.53c.08.19.05.38-.05.54l-.3.47c-.1.15-.2.31-.08.52.13.22.57.95 1.22 1.54.84.75 1.54.99 1.76 1.1.22.1.35.08.48-.08l.6-.7c.15-.18.33-.14.54-.07l1.6.75c.22.1.37.16.42.27.05.1.05.61-.14 1.2-.19.6-1.1 1.14-1.52 1.2-.4.06-.91.2-3.1-.72-2.62-1.1-4.3-3.8-4.43-3.98-.12-.18-1.06-1.42-1.06-2.7 0-1.27.67-1.9.9-2.16Z"></path>
+      </svg>
+      <span data-i18n="whatsapp.label">WhatsApp</span>
+    </a>
 
     <footer class="site-footer">
       <a class="brand footer-brand" href="#top" aria-label="Back to top">
